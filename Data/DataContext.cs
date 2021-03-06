@@ -13,6 +13,7 @@ namespace api.Data
         }
 
         public DbSet<Computer> Computers {get; set;}
+        public DbSet<Customer> Customers {get; set;}
     }
 }
 

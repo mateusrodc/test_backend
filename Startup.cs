@@ -30,6 +30,7 @@ namespace api
         {
             services.AddDbContext<DataContext>(options => options.UseMySql(Configuration.GetConnectionString("myConnection")));
             services.AddScoped<DataContext, DataContext>();
+            services.AddCors();
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
