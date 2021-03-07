@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using api.Data;
 using api.Models;
+using Microsoft.AspNetCore.Cors;
 
 namespace api.Controllers
 {
@@ -19,11 +20,21 @@ namespace api.Controllers
         }
 
         [HttpGet]
+        //[EnableCors("cors")]
         [Route("")]
         public async Task<ActionResult<List<Computer>>> Get()
         {
             var computers = await _context.Computers.ToListAsync();
             return computers;
+        }
+        [HttpGet]
+        [Route("{id:int}")]
+
+        public async Task<ActionResult<Computer>> GetById([FromServices] DataContext context, int id)
+        {
+            var computer = await context.Computers.AsNoTracking()
+            .FirstOrDefaultAsync(x => x.Id == id);
+            return computer;
         }
         [HttpPost]
         [Route("")]

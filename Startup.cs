@@ -18,6 +18,7 @@ namespace api
 {
     public class Startup
     {
+        
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -30,7 +31,16 @@ namespace api
         {
             services.AddDbContext<DataContext>(options => options.UseMySql(Configuration.GetConnectionString("myConnection")));
             services.AddScoped<DataContext, DataContext>();
-            services.AddCors();
+            services.AddCors(options =>
+            {
+            options.AddPolicy("cors",
+                builder =>
+                {
+                    builder.AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    .AllowAnyHeader();
+                });
+            });
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
@@ -48,9 +58,9 @@ namespace api
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "api v1"));
             }
 
-            app.UseHttpsRedirection();
-
+            //app.UseHttpsRedirection();
             app.UseRouting();
+            app.UseCors("cors");
 
             app.UseAuthorization();
 
