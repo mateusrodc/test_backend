@@ -39,7 +39,20 @@ namespace api.Controllers
                 return BadRequest(ModelState);
             }
         }
-        
+        //[HttpPost]
+        //[Route("auth")]
+        //public async Task<ActionResult<Customer>> Auth(
+            //[FromBody] Customer model, string usuario)
+        //{
+            //if(ModelState.IsValid)
+            //{
+                //await _context.Customers.FindAsync(model.Usuario);
+                //return Ok();
+            //}
+            //else{
+               //return BadRequest(ModelState);
+            //}
+        //}
 
     }
 }

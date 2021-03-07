@@ -43,8 +43,8 @@ namespace api.Models
         public string VelocidadeProcessador {get; set;}
 
         [Required(ErrorMessage = "Este campo é obrigatório")]
-        [MaxLength(60, ErrorMessage = "Este campo deve conter entre 3 a 60 caracteres")]
-        [MinLength(3, ErrorMessage = "Este campo deve conter entre 3 a 60 caracteres")]
+        [MaxLength(250, ErrorMessage = "Este campo deve conter entre 3 a 250 caracteres")]
+        [MinLength(3, ErrorMessage = "Este campo deve conter entre 3 a 250 caracteres")]
 
         public string Foto {get; set;}
     }
