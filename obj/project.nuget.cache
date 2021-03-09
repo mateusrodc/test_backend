@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "2fFw7CmJowaPe9Ula0OJyhX9WfVJ9VlJwiW0WqPsxb0GE4PnEqs/7K+HkmGCwevm8Unt6meV1CRtC7K/5EQ5AQ==",
+  "dgSpecHash": "RmDRtvyurCdPBloDXrKbnTD/S0VS0NCYqsMe/6VcS7aQqDWW9l5QSkhg7LUO5tetEyI4FEt8LuqAT6BbPnQdfQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\mateu\\Desktop\\Inticom\\backend\\api\\api.csproj",
   "expectedPackageFiles": [
@@ -14,6 +14,7 @@
     "C:\\Users\\mateu\\.nuget\\packages\\microsoft.entityframeworkcore.design\\5.0.3\\microsoft.entityframeworkcore.design.5.0.3.nupkg.sha512",
     "C:\\Users\\mateu\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\5.0.3\\microsoft.entityframeworkcore.relational.5.0.3.nupkg.sha512",
     "C:\\Users\\mateu\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\5.0.3\\microsoft.entityframeworkcore.sqlserver.5.0.3.nupkg.sha512",
+    "C:\\Users\\mateu\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\5.0.3\\microsoft.entityframeworkcore.tools.5.0.3.nupkg.sha512",
     "C:\\Users\\mateu\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\mateu\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\5.0.0\\microsoft.extensions.caching.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\mateu\\.nuget\\packages\\microsoft.extensions.caching.memory\\5.0.0\\microsoft.extensions.caching.memory.5.0.0.nupkg.sha512",
